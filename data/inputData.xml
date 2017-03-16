@@ -1,0 +1,287 @@
+<AlocacaoHorarioTurma id="1">
+
+    <!-- lista de alocacoes -->
+    <alocacoes id="1">
+
+        <!--alocacoes do prof de Mat 1-->
+        <Alocacao id="1">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id=" 1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="1">
+                <id>1</id>
+                <nome>P01</nome>
+                <sala>1</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="2">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id=" 1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="1">
+                <id>1</id>
+                <nome>P01</nome>
+                <sala>1</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="3">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id=" 1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="1">
+                <id>1</id>
+                <nome>P01</nome>
+                <sala>1</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="4">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id=" 1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="1">
+                <id>1</id>
+                <nome>P01</nome>
+                <sala>1</sala>
+            </turma>
+        </Alocacao>
+
+        <!-- alocacoes do prof Mat 2 -->
+
+    </alocacoes>
+
+
+    <!-- lista de horarios -->
+    <horarios id="1">
+
+        <!-- segunda -->
+        <horario id="1">
+            <id>1</id>
+            <horainicio>07</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>07</horafim>
+            <minutofim>59</minutofim>
+            <dia>seg</dia>
+        </horario>
+        <horario id="2">
+            <id>2</id>
+            <horainicio>08</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>08</horafim>
+            <minutofim>59</minutofim>
+            <dia>seg</dia>
+        </horario>
+        <horario id="3">
+            <id>3</id>
+            <horainicio>09</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>09</horafim>
+            <minutofim>59</minutofim>
+            <dia>seg</dia>
+        </horario>
+        <horario id="4">
+            <id>4</id>
+            <horainicio>10</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>10</horafim>
+            <minutofim>59</minutofim>
+            <dia>seg</dia>
+        </horario>
+        <horario id="5">
+            <id>5</id>
+            <horainicio>11</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>11</horafim>
+            <minutofim>59</minutofim>
+            <dia>seg</dia>
+        </horario>
+
+        <!-- terca -->
+        <horario id="6">
+            <id>6</id>
+            <horainicio>07</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>07</horafim>
+            <minutofim>59</minutofim>
+            <dia>ter</dia>
+        </horario>
+        <horario id="7">
+            <id>7</id>
+            <horainicio>80</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>08</horafim>
+            <minutofim>59</minutofim>
+            <dia>ter</dia>
+        </horario>
+        <horario id="8">
+            <id>8</id>
+            <horainicio>09</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>09</horafim>
+            <minutofim>59</minutofim>
+            <dia>ter</dia>
+        </horario>
+        <horario id="9">
+            <id>9</id>
+            <horainicio>10</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>10</horafim>
+            <minutofim>59</minutofim>
+            <dia>ter</dia>
+        </horario>
+        <horario id="10">
+            <id>10</id>
+            <horainicio>11</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>11</horafim>
+            <minutofim>59</minutofim>
+            <dia>ter</dia>
+        </horario>
+
+        <!-- quarta -->
+        <horario id="11">
+            <id>11</id>
+            <horainicio>07</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>07</horafim>
+            <minutofim>59</minutofim>
+            <dia>qua</dia>
+        </horario>
+        <horario id="12">
+            <id>12</id>
+            <horainicio>08</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>08</horafim>
+            <minutofim>59</minutofim>
+            <dia>qua</dia>
+        </horario>
+        <horario id="13">
+            <id>13</id>
+            <horainicio>09</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>09</horafim>
+            <minutofim>59</minutofim>
+            <dia>qua</dia>
+        </horario>
+        <horario id="14">
+            <id>14</id>
+            <horainicio>10</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>10</horafim>
+            <minutofim>59</minutofim>
+            <dia>qua</dia>
+        </horario>
+        <horario id="15">
+            <id>15</id>
+            <horainicio>11</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>11</horafim>
+            <minutofim>59</minutofim>
+            <dia>qua</dia>
+        </horario>
+
+        <!-- quinta -->
+        <horario id="16">
+            <id>16</id>
+            <horainicio>07</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>07</horafim>
+            <minutofim>59</minutofim>
+            <dia>qui</dia>
+        </horario>
+        <horario id="17">
+            <id>17</id>
+            <horainicio>08</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>08</horafim>
+            <minutofim>59</minutofim>
+            <dia>qui</dia>
+        </horario>
+        <horario id="18">
+            <id>18</id>
+            <horainicio>09</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>09</horafim>
+            <minutofim>59</minutofim>
+            <dia>qui</dia>
+        </horario>
+        <horario id="19">
+            <id>19</id>
+            <horainicio>10</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>10</horafim>
+            <minutofim>59</minutofim>
+            <dia>qui</dia>
+        </horario>
+        <horario id="20">
+            <id>20</id>
+            <horainicio>11</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>11</horafim>
+            <minutofim>59</minutofim>
+            <dia>qui</dia>
+        </horario>
+
+        <!-- sexta -->
+        <horario id="21">
+            <id>21</id>
+            <horainicio>07</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>07</horafim>
+            <minutofim>59</minutofim>
+            <dia>sex</dia>
+        </horario>
+        <horario id="22">
+            <id>22</id>
+            <horainicio>08</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>08</horafim>
+            <minutofim>59</minutofim>
+            <dia>sex</dia>
+        </horario>
+        <horario id="23">
+            <id>23</id>
+            <horainicio>09</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>09</horafim>
+            <minutofim>59</minutofim>
+            <dia>sex</dia>
+        </horario>
+        <horario id="24">
+            <id>24</id>
+            <horainicio>10</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>10</horafim>
+            <minutofim>59</minutofim>
+            <dia>sex</dia>
+        </horario>
+        <horario id="25">
+            <id>25</id>
+            <horainicio>11</horainicio>
+            <minutoinicio>00</minutoinicio>
+            <horafim>11</horafim>
+            <minutofim>59</minutofim>
+            <dia>sex</dia>
+        </horario>
+
+    </horarios>
+
+</AlocacaoHorarioTurma>

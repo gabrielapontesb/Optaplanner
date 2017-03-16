@@ -1,0 +1,11 @@
+dominio\Professor.class
+difficulty\AlocacaoDifficultyComparator.class
+dominio\AlocacaoHorarioTurma.class
+dominio\Disciplina.class
+dominio\Horario.class
+dominio\Turma.class
+application\BenchmarkMain.class
+difficulty\HorarioStrengthComparator.class
+controller\Resolvedor.class
+dominio\Alocacao.class
+difficulty\TurmaStrengthComparator.class

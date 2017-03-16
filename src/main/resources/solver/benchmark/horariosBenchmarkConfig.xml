@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plannerBenchmark>
+    <benchmarkDirectory>benchmarkResults</benchmarkDirectory>
+
+    <inheritedSolverBenchmark>
+        <problemBenchmarks>
+
+            <!--<xStreamAnnotatedClass>dominio.AlocacaoHorarioTurma</xStreamAnnotatedClass>-->
+            <inputSolutionFile>data/inputData.xml</inputSolutionFile>
+
+            <problemStatisticType>BEST_SCORE</problemStatisticType>
+            <problemStatisticType>STEP_SCORE</problemStatisticType>
+            <problemStatisticType>CALCULATE_COUNT_PER_SECOND</problemStatisticType>
+            <problemStatisticType>BEST_SOLUTION_MUTATION</problemStatisticType>
+        </problemBenchmarks>
+
+        <solver>
+            <solutionClass>dominio.AlocacaoHorarioTurma</solutionClass>
+            <entityClass>dominio.Alocacao</entityClass>
+
+            <scoreDirectorFactory>
+                <scoreDefinitionType>HARD_MEDIUM_SOFT</scoreDefinitionType>
+                <scoreDrl>solver/rules.drl</scoreDrl>
+            </scoreDirectorFactory>
+
+            <termination>
+                <terminationCompositionStyle>OR</terminationCompositionStyle>
+                <bestScoreLimit>0hard/0medium/0soft</bestScoreLimit>
+                <secondsSpentLimit>10</secondsSpentLimit>
+            </termination>
+
+            <constructionHeuristic>
+                <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
+            </constructionHeuristic>
+
+            <localSearch>
+                <unionMoveSelector>
+                    <changeMoveSelector>
+                        <entitySelector>
+                            <entityClass>dominio.Alocacao</entityClass>
+                        </entitySelector>
+
+                        <valueSelector>
+                            <variableName>horario</variableName>
+                        </valueSelector>
+
+                    </changeMoveSelector>
+                </unionMoveSelector>
+
+                <acceptor>
+                    <lateAcceptanceSize>600</lateAcceptanceSize>
+                </acceptor>
+
+                <forager>
+                    <acceptedCountLimit>4</acceptedCountLimit>
+                </forager>
+
+            </localSearch>
+        </solver>
+    </inheritedSolverBenchmark>
+
+    <solverBenchmark>
+        <name>Tabu Search</name>
+        <solver>
+            <constructionHeuristic>
+                <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
+            </constructionHeuristic>
+            <localSearch>
+                <!--<changeMoveSelector>
+                    <selectionOrder>ORIGINAL</selectionOrder>
+                </changeMoveSelector>
+                <acceptor>
+                    <entityTabuSize>5</entityTabuSize>
+                </acceptor>
+                <forager>
+                </forager>-->
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+
+</plannerBenchmark>

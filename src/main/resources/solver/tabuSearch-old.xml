@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver>
+    <!-- Modelo de domínio -->
+    <solutionClass>dominio.AlocacaoHorarioTurma</solutionClass>
+    <entityClass>dominio.Alocacao</entityClass>
+
+    <!-- Score -->
+    <scoreDirectorFactory>
+        <scoreDefinitionType>HARD_MEDIUM_SOFT</scoreDefinitionType>
+        <scoreDrl>solver/rules.drl</scoreDrl>
+    </scoreDirectorFactory>
+
+
+
+    <!-- Algoritmos de otimização -->
+    <constructionHeuristic>
+        <!--<constructionHeuristicType>ALLOCATE_ENTITY_FROM_QUEUE</constructionHeuristicType>-->
+
+            <queuedEntityPlacer>
+
+                <entitySelector id="Alocacao">
+                    <cacheType>PHASE</cacheType>
+                </entitySelector>
+
+                <changeMoveSelector>
+                    <entitySelector mimicSelectorRef="Alocacao"/>
+                    <valueSelector>
+                        <variableName>horario</variableName>
+                    </valueSelector>
+                </changeMoveSelector>
+                <changeMoveSelector>
+                    <entitySelector mimicSelectorRef="Alocacao"/>
+                    <valueSelector>
+                        <variableName>turma</variableName>
+                    </valueSelector>
+                </changeMoveSelector>
+                <swapMoveSelector>
+                    <entitySelector mimicSelectorRef="Alocacao"/>
+                </swapMoveSelector>
+
+            </queuedEntityPlacer>
+
+
+        <!--<forager>
+            <pickEarlyType>NEVER</pickEarlyType>
+        </forager>-->
+    </constructionHeuristic>
+
+    <localSearch>
+
+        <termination>
+            <terminationCompositionStyle>OR</terminationCompositionStyle>
+            <bestScoreLimit>0hard/0medium/0soft</bestScoreLimit>
+            <secondsSpentLimit>10</secondsSpentLimit>
+        </termination>
+
+        <!--<unionMoveSelector>
+            <changeMoveSelector>
+                <entitySelector>
+                    <entityClass>dominio.Alocacao</entityClass>
+                </entitySelector>
+
+                <valueSelector>
+                    <variableName>horario</variableName>
+                </valueSelector>
+
+            </changeMoveSelector>
+
+            <changeMoveSelector>
+                <entitySelector>
+                    <entityClass>dominio.Alocacao</entityClass>
+                </entitySelector>
+
+                <valueSelector>
+                    <variableName>turma</variableName>
+                </valueSelector>
+
+            </changeMoveSelector>
+
+            <swapMoveSelector>
+                <entitySelector>
+                    <entityClass>dominio.Alocacao</entityClass>
+                </entitySelector>
+            </swapMoveSelector>
+
+        </unionMoveSelector>-->
+
+        <acceptor>
+            <entityTabuRatio>0.02</entityTabuRatio>
+        </acceptor>
+
+        <!--<unionMoveSelector>
+
+            <changeMoveSelector>
+                <entitySelector>
+                    <entityClass>dominio.Alocacao</entityClass>
+                </entitySelector>
+            </changeMoveSelector>
+
+            <changeMoveSelector>
+                <valueSelector>
+                    <variableName>horario</variableName>
+                </valueSelector>
+            </changeMoveSelector>
+
+            <changeMoveSelector>
+                <valueSelector>
+                    <variableName>turma</variableName>
+                </valueSelector>
+            </changeMoveSelector>
+
+            <swapMoveSelector>
+                <entitySelector>
+                    <entityClass>dominio.Alocacao</entityClass>
+                </entitySelector>
+            </swapMoveSelector>
+        </unionMoveSelector>-->
+    </localSearch>
+
+
+</solver>
