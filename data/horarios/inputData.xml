@@ -1,253 +1,834 @@
 <dominio.AlocacaoHorarioTurma id="1">
-    <alocacoes id="2">
-        <Alocacao id="3">
-            <disciplina id="4">
+    <alocacoes id="1">
+
+        <!-- PROF MAT 1 -->
+        <!-- 4 alocacoes na turma 1 -->
+        <Alocacao id="1">
+            <disciplina id="1">
                 <nome>Matemática 1</nome>
-                <professor id="5">
+                <professor id="1">
                     <nome>Mat 1</nome>
                 </professor>
             </disciplina>
 
-            <turma id="6">
+            <turma id="1">
                 <nome>P01</nome>
                 <sala>1</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="2">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="1">
+                <nome>P01</nome>
+                <sala>1</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="3">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="1">
+                <nome>P01</nome>
+                <sala>1</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="4">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="1">
+                <nome>P01</nome>
+                <sala>1</sala>
+            </turma>
+        </Alocacao>
+
+
+        <!-- 4 alocacoes na turma 2 -->
+        <Alocacao id="5">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="2">
+                <nome>P02</nome>
+                <sala>2</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="6">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="2">
+                <nome>P02</nome>
+                <sala>2</sala>
             </turma>
         </Alocacao>
 
         <Alocacao id="7">
-            <disciplina id="8">
+            <disciplina id="1">
                 <nome>Matemática 1</nome>
-                <professor id=" 9">
+                <professor id="1">
                     <nome>Mat 1</nome>
                 </professor>
             </disciplina>
 
-            <turma id="10">
-                <nome>P01</nome>
-                <sala>1</sala>
+            <turma id="2">
+                <nome>P02</nome>
+                <sala>2</sala>
             </turma>
         </Alocacao>
 
-        <!--<Alocacao id="11">
-            <disciplina id="12">
+        <Alocacao id="8">
+            <disciplina id="1">
                 <nome>Matemática 1</nome>
-                <professor id="13">
+                <professor id="1">
                     <nome>Mat 1</nome>
                 </professor>
             </disciplina>
 
-            <turma id="14">
-                <nome>P01</nome>
-                <sala>1</sala>
+            <turma id="2">
+                <nome>P02</nome>
+                <sala>2</sala>
+            </turma>
+        </Alocacao>
+
+
+        <!-- 4 alocacoes na turma 3 -->
+        <Alocacao id="9">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="3">
+                <nome>P03</nome>
+                <sala>3</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="10">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="3">
+                <nome>P03</nome>
+                <sala>3</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="11">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="3">
+                <nome>P03</nome>
+                <sala>3</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="12">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="3">
+                <nome>P03</nome>
+                <sala>3</sala>
+            </turma>
+        </Alocacao>
+
+
+        <!-- 4 alocacoes na turma 4-->
+        <Alocacao id="13">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="4">
+                <nome>P04</nome>
+                <sala>4</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="14">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="4">
+                <nome>P04</nome>
+                <sala>4</sala>
             </turma>
         </Alocacao>
 
         <Alocacao id="15">
-            <disciplina id="16">
+            <disciplina id="1">
                 <nome>Matemática 1</nome>
-                <professor id="17">
+                <professor id="1">
                     <nome>Mat 1</nome>
                 </professor>
             </disciplina>
 
-            <turma id="18">
-                <nome>P01</nome>
-                <sala>1</sala>
+            <turma id="4">
+                <nome>P04</nome>
+                <sala>4</sala>
             </turma>
-        </Alocacao>-->
-        <!-- alocacoes do prof Mat 2 -->
+        </Alocacao>
+
+        <Alocacao id="16">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="4">
+                <nome>P04</nome>
+                <sala>4</sala>
+            </turma>
+        </Alocacao>
+
+
+        <!-- 4 alocacoes na turma 5 -->
+        <Alocacao id="17">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="5">
+                <nome>P05</nome>
+                <sala>5</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="18">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="5">
+                <nome>P05</nome>
+                <sala>5</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="19">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="5">
+                <nome>P05</nome>
+                <sala>5</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="20">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="5">
+                <nome>P05</nome>
+                <sala>5</sala>
+            </turma>
+        </Alocacao>
+
+        <!-- 4 alocacoes na turma 9 -->
+        <Alocacao id="21">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="9">
+                <nome>S09</nome>
+                <sala>9</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="22">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="9">
+                <nome>S09</nome>
+                <sala>9</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="23">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="9">
+                <nome>S09</nome>
+                <sala>9</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="24">
+            <disciplina id="1">
+                <nome>Matemática 1</nome>
+                <professor id="1">
+                    <nome>Mat 1</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="9">
+                <nome>S09</nome>
+                <sala>9</sala>
+            </turma>
+        </Alocacao>
+
+
+
+        <!-- PROF MAT 2 -->
+        <!-- 4 alocacoes na turma 6 -->
+        <Alocacao id="25">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="6">
+                <nome>S06</nome>
+                <sala>6</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="26">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="6">
+                <nome>S06</nome>
+                <sala>6</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="27">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="6">
+                <nome>S06</nome>
+                <sala>6</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="28">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="6">
+                <nome>S06</nome>
+                <sala>6</sala>
+            </turma>
+        </Alocacao>
+
+
+        <!-- 4 alocacoes na turma 7 -->
+        <Alocacao id="25">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="7">
+                <nome>S07</nome>
+                <sala>7</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="26">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="7">
+                <nome>S07</nome>
+                <sala>7</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="27">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="7">
+                <nome>S07</nome>
+                <sala>7</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="28">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="7">
+                <nome>S07</nome>
+                <sala>7</sala>
+            </turma>
+        </Alocacao>
+
+
+        <!-- 4 alocacoes na turma 8 -->
+        <Alocacao id="29">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="8">
+                <nome>S08</nome>
+                <sala>8</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="30">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="8">
+                <nome>S08</nome>
+                <sala>8</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="31">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="8">
+                <nome>S08</nome>
+                <sala>8</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="32">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="8">
+                <nome>S08</nome>
+                <sala>8</sala>
+            </turma>
+        </Alocacao>
+
+
+        <!-- 4 alocacoes na turma 10 -->
+        <Alocacao id="33">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="10">
+                <nome>T10</nome>
+                <sala>10</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="34">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="10">
+                <nome>T10</nome>
+                <sala>10</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="35">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="10">
+                <nome>T10</nome>
+                <sala>10</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="36">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="10">
+                <nome>T10</nome>
+                <sala>10</sala>
+            </turma>
+        </Alocacao>
+
+
+        <!-- 4 alocacoes na turma 11 -->
+        <Alocacao id="37">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="11">
+                <nome>T11</nome>
+                <sala>11</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="38">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="11">
+                <nome>T11</nome>
+                <sala>11</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="39">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="11">
+                <nome>T11</nome>
+                <sala>11</sala>
+            </turma>
+        </Alocacao>
+
+        <Alocacao id="40">
+            <disciplina id="2">
+                <nome>Matemática 2</nome>
+                <professor id="2">
+                    <nome>Mat 2</nome>
+                </professor>
+            </disciplina>
+
+            <turma id="11">
+                <nome>T11</nome>
+                <sala>11</sala>
+            </turma>
+        </Alocacao>
+
     </alocacoes>
 
 
     <!-- lista de horarios -->
-    <horarios id="19">
+    <horarios id="1">
 
         <!-- segunda -->
-        <Horario id="20">
-            <id>1</id>
+        <Horario id="1">
             <horainicio>7</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>7</horafim>
             <minutofim>59</minutofim>
             <dia>seg</dia>
         </Horario>
-        <Horario id="21">
-            <id>2</id>
+        <Horario id="2">
             <horainicio>8</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>8</horafim>
             <minutofim>59</minutofim>
             <dia>seg</dia>
         </Horario>
-        <Horario id="22">
-
+        <Horario id="3">
             <horainicio>9</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>9</horafim>
             <minutofim>59</minutofim>
             <dia>seg</dia>
         </Horario>
-        <Horario id="23">
+        <Horario id="4">
             <horainicio>10</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>10</horafim>
             <minutofim>59</minutofim>
             <dia>seg</dia>
         </Horario>
-        <!--<horario id="24">
+        <Horario id="5">
             <horainicio>11</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>11</horafim>
             <minutofim>59</minutofim>
             <dia>seg</dia>
-        </horario>-->
+        </Horario>
 
         <!-- terca -->
-        <!--<horario id="25">
-            <horainicio>07</horainicio>
+        <Horario id="6">
+            <horainicio>7</horainicio>
             <minutoinicio>00</minutoinicio>
-            <horafim>07</horafim>
+            <horafim>7</horafim>
             <minutofim>59</minutofim>
             <dia>ter</dia>
-        </horario>
-        <horario id="26">
-            <horainicio>80</horainicio>
+        </Horario>
+        <Horario id="7">
+            <horainicio>8</horainicio>
             <minutoinicio>00</minutoinicio>
-            <horafim>08</horafim>
+            <horafim>8</horafim>
             <minutofim>59</minutofim>
             <dia>ter</dia>
-        </horario>
-        <horario id="27">
-            <horainicio>09</horainicio>
+        </Horario>
+        <Horario id="8">
+            <horainicio>9</horainicio>
             <minutoinicio>00</minutoinicio>
-            <horafim>09</horafim>
+            <horafim>9</horafim>
             <minutofim>59</minutofim>
             <dia>ter</dia>
-        </horario>
-        <horario id="28">
+        </Horario>
+        <Horario id="9">
             <horainicio>10</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>10</horafim>
             <minutofim>59</minutofim>
             <dia>ter</dia>
-        </horario>
-        <horario id="29">
+        </Horario>
+        <Horario id="10">
             <horainicio>11</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>11</horafim>
             <minutofim>59</minutofim>
             <dia>ter</dia>
-        </horario>-->
+        </Horario>
 
         <!-- quarta -->
-        <!--<horario id="30">
-            <horainicio>07</horainicio>
+        <Horario id="11">
+            <horainicio>7</horainicio>
             <minutoinicio>00</minutoinicio>
-            <horafim>07</horafim>
+            <horafim>7</horafim>
             <minutofim>59</minutofim>
             <dia>qua</dia>
-        </horario>
-        <horario id="31">
-            <horainicio>08</horainicio>
+        </Horario>
+        <Horario id="12">
+            <horainicio>8</horainicio>
             <minutoinicio>00</minutoinicio>
-            <horafim>08</horafim>
+            <horafim>8</horafim>
             <minutofim>59</minutofim>
             <dia>qua</dia>
-        </horario>
-        <horario id="32">
-            <horainicio>09</horainicio>
+        </Horario>
+        <Horario id="13">
+            <horainicio>9</horainicio>
             <minutoinicio>00</minutoinicio>
-            <horafim>09</horafim>
+            <horafim>9</horafim>
             <minutofim>59</minutofim>
             <dia>qua</dia>
-        </horario>
-        <horario id="33">
+        </Horario>
+        <Horario id="14">
             <horainicio>10</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>10</horafim>
             <minutofim>59</minutofim>
             <dia>qua</dia>
-        </horario>
-        <horario id="34">
+        </Horario>
+        <Horario id="15">
             <horainicio>11</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>11</horafim>
             <minutofim>59</minutofim>
             <dia>qua</dia>
-        </horario>-->
+        </Horario>
 
         <!-- quinta -->
-        <!--<horario id="35">
-            <horainicio>07</horainicio>
+        <Horario id="16">
+            <horainicio>7</horainicio>
             <minutoinicio>00</minutoinicio>
-            <horafim>07</horafim>
+            <horafim>7</horafim>
             <minutofim>59</minutofim>
             <dia>qui</dia>
-        </horario>
-        <horario id="36">
-            <horainicio>08</horainicio>
+        </Horario>
+        <Horario id="17">
+            <horainicio>8</horainicio>
             <minutoinicio>00</minutoinicio>
-            <horafim>08</horafim>
+            <horafim>8</horafim>
             <minutofim>59</minutofim>
             <dia>qui</dia>
-        </horario>
-        <horario id="37">
-            <horainicio>09</horainicio>
+        </Horario>
+        <Horario id="18">
+            <horainicio>9</horainicio>
             <minutoinicio>00</minutoinicio>
-            <horafim>09</horafim>
+            <horafim>9</horafim>
             <minutofim>59</minutofim>
             <dia>qui</dia>
-        </horario>
-        <horario id="38">
+        </Horario>
+        <Horario id="19">
             <horainicio>10</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>10</horafim>
             <minutofim>59</minutofim>
             <dia>qui</dia>
-        </horario>
-        <horario id="39">
+        </Horario>
+        <Horario id="20">
             <horainicio>11</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>11</horafim>
             <minutofim>59</minutofim>
             <dia>qui</dia>
-        </horario>-->
+        </Horario>
 
         <!-- sexta -->
-        <!--<horario id="40">
-            <horainicio>07</horainicio>
+        <Horario id="21">
+            <horainicio>7</horainicio>
             <minutoinicio>00</minutoinicio>
-            <horafim>07</horafim>
+            <horafim>7</horafim>
             <minutofim>59</minutofim>
             <dia>sex</dia>
-        </horario>
-        <horario id="41">
-            <horainicio>08</horainicio>
+        </Horario>
+        <Horario id="22">
+            <horainicio>8</horainicio>
             <minutoinicio>00</minutoinicio>
-            <horafim>08</horafim>
+            <horafim>8</horafim>
             <minutofim>59</minutofim>
             <dia>sex</dia>
-        </horario>
-        <horario id="42">
-            <horainicio>09</horainicio>
+        </Horario>
+        <Horario id="23">
+            <horainicio>9</horainicio>
             <minutoinicio>00</minutoinicio>
-            <horafim>09</horafim>
+            <horafim>9</horafim>
             <minutofim>59</minutofim>
             <dia>sex</dia>
-        </horario>
-        <horario id="43">
+        </Horario>
+        <Horario id="24">
             <horainicio>10</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>10</horafim>
             <minutofim>59</minutofim>
             <dia>sex</dia>
-        </horario>
-        <horario id="44">
+        </Horario>
+        <Horario id="25">
             <horainicio>11</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>11</horafim>
             <minutofim>59</minutofim>
             <dia>sex</dia>
-        </horario>-->
+        </Horario>
     </horarios>
 </dominio.AlocacaoHorarioTurma>
