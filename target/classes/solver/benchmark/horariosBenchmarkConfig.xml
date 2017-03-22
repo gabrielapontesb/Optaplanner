@@ -5,22 +5,27 @@
     <inheritedSolverBenchmark>
         <problemBenchmarks>
 
-            <!--<xStreamAnnotatedClass>dominio.AlocacaoHorarioTurma</xStreamAnnotatedClass>-->
-            <inputSolutionFile>data/inputData.xml</inputSolutionFile>
+            <xStreamAnnotatedClass>dominio.AlocacaoHorarioTurma</xStreamAnnotatedClass>
+            <inputSolutionFile>data/horarios/inputData.xml</inputSolutionFile>
 
             <problemStatisticType>BEST_SCORE</problemStatisticType>
             <problemStatisticType>STEP_SCORE</problemStatisticType>
             <problemStatisticType>CALCULATE_COUNT_PER_SECOND</problemStatisticType>
             <problemStatisticType>BEST_SOLUTION_MUTATION</problemStatisticType>
+
+            <writeOutputSolutionEnabled>true</writeOutputSolutionEnabled>
         </problemBenchmarks>
 
         <solver>
+
+            <!-- Modelo de domínio -->
             <solutionClass>dominio.AlocacaoHorarioTurma</solutionClass>
             <entityClass>dominio.Alocacao</entityClass>
 
+            <!-- Score -->
             <scoreDirectorFactory>
                 <scoreDefinitionType>HARD_MEDIUM_SOFT</scoreDefinitionType>
-                <scoreDrl>solver/rules.drl</scoreDrl>
+                <scoreDrl>solver/drools/rules.drl</scoreDrl>
             </scoreDirectorFactory>
 
             <termination>
@@ -28,54 +33,53 @@
                 <bestScoreLimit>0hard/0medium/0soft</bestScoreLimit>
                 <secondsSpentLimit>10</secondsSpentLimit>
             </termination>
-
-            <constructionHeuristic>
-                <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
-            </constructionHeuristic>
-
-            <localSearch>
-                <unionMoveSelector>
-                    <changeMoveSelector>
-                        <entitySelector>
-                            <entityClass>dominio.Alocacao</entityClass>
-                        </entitySelector>
-
-                        <valueSelector>
-                            <variableName>horario</variableName>
-                        </valueSelector>
-
-                    </changeMoveSelector>
-                </unionMoveSelector>
-
-                <acceptor>
-                    <lateAcceptanceSize>600</lateAcceptanceSize>
-                </acceptor>
-
-                <forager>
-                    <acceptedCountLimit>4</acceptedCountLimit>
-                </forager>
-
-            </localSearch>
         </solver>
+
     </inheritedSolverBenchmark>
 
+
+    <!--FORCA BRUTA-->
     <solverBenchmark>
-        <name>Tabu Search</name>
+        <name>Brute Force</name>
         <solver>
-            <constructionHeuristic>
-                <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
-            </constructionHeuristic>
-            <localSearch>
-                <!--<changeMoveSelector>
-                    <selectionOrder>ORIGINAL</selectionOrder>
-                </changeMoveSelector>
-                <acceptor>
-                    <entityTabuSize>5</entityTabuSize>
-                </acceptor>
-                <forager>
-                </forager>-->
-            </localSearch>
+            <exhaustiveSearch>
+                <exhaustiveSearchType>BRUTE_FORCE</exhaustiveSearchType>
+            </exhaustiveSearch>
         </solver>
+    </solverBenchmark>
+
+    <!--BUSCA TABU-->
+    <solverBenchmark>
+        <name>Entity Tabu Search</name>
+            <solver>
+                <constructionHeuristic>
+                    <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
+                </constructionHeuristic>
+
+                <localSearch>
+                    <unionMoveSelector>
+                        <changeMoveSelector>
+                            <entitySelector>
+                                <entityClass>dominio.Alocacao</entityClass>
+                            </entitySelector>
+
+                            <valueSelector>
+                                <variableName>horario</variableName>
+                            </valueSelector>
+
+                        </changeMoveSelector>
+                    </unionMoveSelector>
+
+                    <acceptor>
+                        <lateAcceptanceSize>400</lateAcceptanceSize>
+                    </acceptor>
+
+                    <forager>
+                        <acceptedCountLimit>4</acceptedCountLimit>
+                    </forager>
+
+                </localSearch>
+            </solver>
     </solverBenchmark>
 
 </plannerBenchmark>

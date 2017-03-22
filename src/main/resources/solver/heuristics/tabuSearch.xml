@@ -6,13 +6,13 @@
 
     <scoreDirectorFactory>
         <scoreDefinitionType>HARD_MEDIUM_SOFT</scoreDefinitionType>
-        <scoreDrl>solver/rules.drl</scoreDrl>
+        <scoreDrl>solver/drools/rules.drl</scoreDrl>
     </scoreDirectorFactory>
 
     <termination>
         <terminationCompositionStyle>OR</terminationCompositionStyle>
         <bestScoreLimit>0hard/0medium/0soft</bestScoreLimit>
-        <secondsSpentLimit>60</secondsSpentLimit>
+        <secondsSpentLimit>10</secondsSpentLimit>
     </termination>
 
     <constructionHeuristic>
@@ -31,21 +31,10 @@
                 </valueSelector>
 
             </changeMoveSelector>
-
-            <!--<changeMoveSelector>
-                <entitySelector>
-                    <entityClass>dominio.Alocacao</entityClass>
-                </entitySelector>
-
-                <valueSelector>
-                    <variableName>turma</variableName>
-                </valueSelector>
-
-            </changeMoveSelector>-->
         </unionMoveSelector>
 
         <acceptor>
-            <lateAcceptanceSize>600</lateAcceptanceSize>
+            <lateAcceptanceSize>400</lateAcceptanceSize>
         </acceptor>
 
         <forager>

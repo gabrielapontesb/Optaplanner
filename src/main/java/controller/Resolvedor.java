@@ -48,8 +48,9 @@ public class Resolvedor extends java.util.Observable implements Runnable{
     }
 
     public static void resolver() {
+
         Resolvedor resolv = new Resolvedor();
-        SolverFactory sF = SolverFactory.createFromXmlResource("solver/tabuSearch.xml");
+        SolverFactory sF = SolverFactory.createFromXmlResource("solver/heuristics/tabuSearch.xml");
         Solver solver = sF.buildSolver();
 
         solver.addEventListener(event -> {
@@ -117,7 +118,7 @@ public class Resolvedor extends java.util.Observable implements Runnable{
 
     @Override
     public void run() {
-        SolverFactory sF = SolverFactory.createFromXmlResource("solver/tabuSearch.xml");
+        SolverFactory sF = SolverFactory.createFromXmlResource("solver/heuristics/tabuSearch.xml");
         Solver solver = sF.buildSolver();
         AlocacaoHorarioTurma bestSolution;
 

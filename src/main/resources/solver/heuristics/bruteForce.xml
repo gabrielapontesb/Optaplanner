@@ -7,7 +7,7 @@
     <!-- Score -->
     <scoreDirectorFactory>
         <scoreDefinitionType>HARD_MEDIUM_SOFT</scoreDefinitionType>
-        <scoreDrl>solver/rules.drl</scoreDrl>
+        <scoreDrl>solver/drools/rules.drl</scoreDrl>
         <initializingScoreTrend>ONLY_DOWN</initializingScoreTrend>
     </scoreDirectorFactory>
 
