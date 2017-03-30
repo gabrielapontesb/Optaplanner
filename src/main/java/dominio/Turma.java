@@ -51,6 +51,7 @@ public class Turma {
         } else if (o instanceof Turma) {
         	Turma other = (Turma) o;
             return new EqualsBuilder()
+					.append(getId(), other.getId())
 					.append(getSala(), other.getSala())
                     .append(getNome(), other.getNome())
                     .isEquals();

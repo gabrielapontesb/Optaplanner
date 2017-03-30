@@ -14,6 +14,9 @@ global HardMediumSoftScoreHolder scoreHolder;
 //restrições físicas
 
 /*"Duas disciplinas nao podem estar alocadas no mesmo horário na mesma turma"*/
+/*Uma turma só pode receber um professor no mesmo horario*/
+
+//////////////////////REVER///////////////////////////////////
 rule "Em cada horário de uma turma só pode existir um professor na sala"
     when
         $a : Alocacao(
@@ -29,7 +32,7 @@ rule "Em cada horário de uma turma só pode existir um professor na sala"
                     horario == $h,
                     horario != null,
                     turma == $t,
-                    disciplina != $d
+                    disciplina.professor.nome != $d.professor.getNome()
                 ),
 
                 init( int total = 0; ),
@@ -41,20 +44,22 @@ rule "Em cada horário de uma turma só pode existir um professor na sala"
 end
 
 
-/*rule "Em um dado horário, cada professor está alocado em uma única turma"
+/*Um professor não pode estar alocado em mais de uma turma no mesmo horario*/
+rule "Em um dado horário, cada professor está alocado em uma única turma"
     when
         $a : Alocacao(
             $h : horario != null,
             $d : disciplina,
-            $t : turma != null
+            $t : turma
         )
 
         //Verificando se existe um mesmo professor alocado em mais de uma turma no mesmo horário
         $total : Number( intValue >= 1 )
             from accumulate(
                 Alocacao(
-                    disciplina.professor == $d.professor,
+                    disciplina.professor.nome == $d.professor.getNome(),
                     turma != $t,
+                    horario != null,
                     horario == $h
                 ),
 
@@ -62,33 +67,6 @@ end
                 action( total += 1;),
                 result(total )
             )
-    then
-        scoreHolder.addHardConstraintMatch(kcontext, -1);
-end*/
-
-
-rule "Uma disciplina nao pode ter alocacoes com horarios repetidos na mesma turma"
-
-    when
-        $a : Alocacao(
-            $d : disciplina,
-            $h : horario != null,
-            $t: turma
-        )
-
-        //Verificando se existe mais de uma allocation de uma disciplina em que os horarios sao iguais.
-        $total : Number( intValue > 1 )
-                    from accumulate(
-                        Alocacao(
-                            horario != null,
-                            horario == $h,
-                            disciplina == $d
-                        ),
-                        init( int total = 0; ),
-                        action( total += 1;),
-                        result(total )
-                    )
-
     then
         scoreHolder.addHardConstraintMatch(kcontext, -1);
 end
@@ -124,7 +102,7 @@ end
 
 
 //restrições pessoais
-rule "O prof Geo 1 não pode dar as duas últimas aulas da sexta"
+/*rule "O prof Geo 1 não pode dar as duas últimas aulas da sexta"
     when
         $a: Alocacao()
 
@@ -150,11 +128,12 @@ rule "O prof Geo 2 não pode dar aulas às segundas, quartas e quintas"
          then
              System.out.println("Professor " + $p + "dando aula na " + $h.getDia());
              scoreHolder.addHardConstraintMatch(kcontext, -1);
-     end
+     end*/
 
 
-
-rule "O prof Mat 1 precisa sair ao término da quarta aula pelo menos 2 dias na semana"
+/*O prof Mat 1 não pode dar as últimas aulas 2 dias da semana ou mais*/
+/*O prof Mat 1 pode dar as últimas aulas apenas em 1 dia da semana*/
+/*rule "O prof Mat 1 precisa sair ao término da quarta aula pelo menos 2 dias na semana"
     when
 
         //Verificando se existe alguma alocacao para o prof Mat 1 na quinta aula em 2 dias ou mais
@@ -172,4 +151,4 @@ rule "O prof Mat 1 precisa sair ao término da quarta aula pelo menos 2 dias na 
 
     then
         scoreHolder.addHardConstraintMatch(kcontext, -1);
-end
+end*/

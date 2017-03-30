@@ -12,7 +12,7 @@
     <termination>
         <terminationCompositionStyle>OR</terminationCompositionStyle>
         <bestScoreLimit>0hard/0medium/0soft</bestScoreLimit>
-        <secondsSpentLimit>10</secondsSpentLimit>
+        <secondsSpentLimit>30</secondsSpentLimit>
     </termination>
 
     <constructionHeuristic>

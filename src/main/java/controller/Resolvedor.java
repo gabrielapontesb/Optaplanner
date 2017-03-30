@@ -42,7 +42,7 @@ public class Resolvedor extends java.util.Observable implements Runnable{
 
         AlocacaoHorarioTurma solucao = (AlocacaoHorarioTurma) solver.getBestSolution();
         logarSolucao(solucao);
-        printResultSolution(solucao);
+        //printResultSolution(solucao);
 
         return solucao;
     }
@@ -73,12 +73,13 @@ public class Resolvedor extends java.util.Observable implements Runnable{
         System.out.println("Melhor score: " + score);
         System.out.println("Solução é viável ? R = " + viabilidade);
         System.out.println();
-        solucao.getAlocacoes().forEach(a -> logger.info("Professor = [{}] -> Disciplina = [{}] -> Horários = [{}] -> Turma = [{}]",
+        solucao.getAlocacoes().forEach(a -> logger.info("Professor = [{}] -> Disciplina = [{}] -> Horário = [{}] -> Turma = [{}]",
                 a.getDisciplina().getProfessor().getNome(),
                 a.getDisciplina().getNome(),
-                a.getHorario().getDia() + " " + a.getHorario().getHorainicio() + ":" + a.getHorario().getMinutoinicio() + " " +
-                        a.getHorario().getHorafim() + ":" + a.getHorario().getMinutofim(),
-                a.getTurma().getNome()));
+                //a.getHorario().getDia() + " " + a.getHorario().getHorainicio() + ":" + a.getHorario().getMinutoinicio() + " " +
+                //        a.getHorario().getHorafim() + ":" + a.getHorario().getMinutofim(),
+                a.getHorario().getId(),
+                a.getTurma().getId()));
     }
 
     public static void printResultSolution(AlocacaoHorarioTurma solucao) {

@@ -75,6 +75,7 @@ public class Horario {
 		} else if (o instanceof Horario) {
 			Horario other = (Horario) o;
 			return new EqualsBuilder()
+					.append(getId(), other.getId())
 					.append(getDia(), other.getDia())
 					.append(getHorainicio(), other.getHorainicio())
 					.append(getHorafim(), other.getHorafim())
