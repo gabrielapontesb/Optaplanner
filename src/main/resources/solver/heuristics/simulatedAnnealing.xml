@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver>
+
+    <solutionClass>dominio.AlocacaoHorarioTurma</solutionClass>
+    <entityClass>dominio.Alocacao</entityClass>
+
+    <scoreDirectorFactory>
+        <scoreDefinitionType>HARD_MEDIUM_SOFT</scoreDefinitionType>
+        <scoreDrl>solver/drools/rules.drl</scoreDrl>
+    </scoreDirectorFactory>
+
+    <termination>
+        <terminationCompositionStyle>OR</terminationCompositionStyle>
+        <bestScoreLimit>0hard/0medium/0soft</bestScoreLimit>
+        <secondsSpentLimit>10</secondsSpentLimit>
+    </termination>
+
+    <constructionHeuristic>
+        <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
+    </constructionHeuristic>
+
+    <localSearch>
+        <unionMoveSelector>
+            <changeMoveSelector>
+                <entitySelector>
+                    <entityClass>dominio.Alocacao</entityClass>
+                </entitySelector>
+
+                <valueSelector>
+                    <variableName>horario</variableName>
+                </valueSelector>
+
+            </changeMoveSelector>
+        </unionMoveSelector>
+
+        <acceptor>
+            <simulatedAnnealingStartingTemperature>2hard/0medium/100soft</simulatedAnnealingStartingTemperature>
+        </acceptor>
+
+        <forager>
+            <acceptedCountLimit>4</acceptedCountLimit>
+        </forager>
+
+    </localSearch>
+</solver>
