@@ -113,21 +113,21 @@ public class Main {
 
 
         /*CRIANDO OS PROFESSORES*/
-        Professor professor01 = new Professor("Mat 1");
-        Professor professor02 = new Professor("Mat 2");
+        Professor professor01 = new Professor("Mat 01");
+        Professor professor02 = new Professor("Mat 02");
         Professor professor03 = new Professor("Port 1");
         Professor professor04 = new Professor("Port 2");
-        Professor professor05 = new Professor("Geo 1");
-        Professor professor06 = new Professor("Geo 2");
-        Professor professor07 = new Professor("Fis");
-        Professor professor08 = new Professor("Bio");
-        Professor professor09 = new Professor("Qui");
-        Professor professor10 = new Professor("Art");
-        Professor professor11 = new Professor("Ing");
-        Professor professor12 = new Professor("Hist");
-        Professor professor13 = new Professor("Soc");
-        Professor professor14 = new Professor("Edf");
-        Professor professor15 = new Professor("Filo");
+        Professor professor05 = new Professor("Geo 01");
+        Professor professor06 = new Professor("Geo 02");
+        Professor professor07 = new Professor("Fis 01");
+        Professor professor08 = new Professor("Bio 01");
+        Professor professor09 = new Professor("Qui 01");
+        Professor professor10 = new Professor("Art 01");
+        Professor professor11 = new Professor("Ing 01");
+        Professor professor12 = new Professor("Hist 1");
+        Professor professor13 = new Professor("Soc 01");
+        Professor professor14 = new Professor("Edf 01");
+        Professor professor15 = new Professor("Filo 1");
 
 
         /*CRIANDO AS DISCIPLINAS*/
@@ -298,19 +298,19 @@ public class Main {
         Alocacao alocacao107 = new Alocacao(disciplina05, turma11);
         Alocacao alocacao108 = new Alocacao(disciplina05, turma11);
 
-        //Prof Geo 2 deve dar 2 aulas em cada turma de 1 a 5
-        //e 1 aulas na turma 10 e 11
+        //Prof Geo 2 deve dar 2 aulas nas turmas 1 e 5
+        //e 1 aula na turma 10 e 11
         Alocacao alocacao109 = new Alocacao(disciplina06, turma01);
         Alocacao alocacao110 = new Alocacao(disciplina06, turma01);
 
-        Alocacao alocacao111 = new Alocacao(disciplina06, turma02);
-        Alocacao alocacao112 = new Alocacao(disciplina06, turma02);
+        Alocacao alocacao111 = new Alocacao(disciplina06, turma10);
+        Alocacao alocacao112 = new Alocacao(disciplina06, turma11);
 
-        Alocacao alocacao113 = new Alocacao(disciplina06, turma03);
+        /*Alocacao alocacao113 = new Alocacao(disciplina06, turma03);
         Alocacao alocacao114 = new Alocacao(disciplina06, turma03);
 
         Alocacao alocacao115 = new Alocacao(disciplina06, turma04);
-        Alocacao alocacao116 = new Alocacao(disciplina06, turma04);
+        Alocacao alocacao116 = new Alocacao(disciplina06, turma04);*/
 
         Alocacao alocacao117 = new Alocacao(disciplina06, turma05);
         Alocacao alocacao118 = new Alocacao(disciplina06, turma05);
@@ -677,10 +677,10 @@ public class Main {
         lstAlocacao.add(alocacao110);
         lstAlocacao.add(alocacao111);
         lstAlocacao.add(alocacao112);
-        lstAlocacao.add(alocacao113);
+        /*lstAlocacao.add(alocacao113);
         lstAlocacao.add(alocacao114);
         lstAlocacao.add(alocacao115);
-        lstAlocacao.add(alocacao116);
+        lstAlocacao.add(alocacao116);*/
         lstAlocacao.add(alocacao117);
         lstAlocacao.add(alocacao118);
         lstAlocacao.add(alocacao119);

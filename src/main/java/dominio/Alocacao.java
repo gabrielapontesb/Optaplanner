@@ -58,7 +58,6 @@ public class Alocacao {
     public int hashCode() {
         return new HashCodeBuilder()
                 .append(getDisciplina())
-				.append(getHorario())
 				.append(getTurma())
                 .toHashCode();
     }

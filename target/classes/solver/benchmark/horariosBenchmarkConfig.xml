@@ -12,6 +12,7 @@
             <problemStatisticType>STEP_SCORE</problemStatisticType>
             <problemStatisticType>CALCULATE_COUNT_PER_SECOND</problemStatisticType>
             <problemStatisticType>BEST_SOLUTION_MUTATION</problemStatisticType>
+            <!--<problemStatisticType>BEST_SOLUTION_CHANGED</problemStatisticType>-->
 
             <writeOutputSolutionEnabled>true</writeOutputSolutionEnabled>
         </problemBenchmarks>

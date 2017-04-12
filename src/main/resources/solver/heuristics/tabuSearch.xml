@@ -12,14 +12,14 @@
     <termination>
         <terminationCompositionStyle>OR</terminationCompositionStyle>
         <bestScoreLimit>0hard/0medium/0soft</bestScoreLimit>
-        <secondsSpentLimit>30</secondsSpentLimit>
+        <secondsSpentLimit>20</secondsSpentLimit>
     </termination>
 
     <constructionHeuristic>
         <constructionHeuristicType>FIRST_FIT_DECREASING</constructionHeuristicType>
     </constructionHeuristic>
 
-    <localSearch>
+    <!--<localSearch>
         <unionMoveSelector>
             <changeMoveSelector>
                 <entitySelector>
@@ -41,5 +41,18 @@
             <acceptedCountLimit>4</acceptedCountLimit>
         </forager>
 
+    </localSearch>-->
+
+    <localSearch>
+        <changeMoveSelector>
+            <selectionOrder>ORIGINAL</selectionOrder>
+        </changeMoveSelector>
+        <!--<acceptor>
+          <entityTabuRatio>0.001</entityTabuRatio>-->
+            <!--<lateAcceptanceSize>50</lateAcceptanceSize>
+        </acceptor>-->
+        <forager>
+            <acceptedCountLimit>60</acceptedCountLimit>
+        </forager>
     </localSearch>
 </solver>

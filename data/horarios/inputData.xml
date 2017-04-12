@@ -12,6 +12,7 @@
             </disciplina>
 
             <turma id="1">
+                <id>1</id>
                 <nome>P01</nome>
                 <sala>1</sala>
             </turma>
@@ -26,6 +27,7 @@
             </disciplina>
 
             <turma id="1">
+                <id>1</id>
                 <nome>P01</nome>
                 <sala>1</sala>
             </turma>
@@ -40,6 +42,7 @@
             </disciplina>
 
             <turma id="1">
+                <id>1</id>
                 <nome>P01</nome>
                 <sala>1</sala>
             </turma>
@@ -54,6 +57,7 @@
             </disciplina>
 
             <turma id="1">
+                <id>1</id>
                 <nome>P01</nome>
                 <sala>1</sala>
             </turma>
@@ -70,6 +74,7 @@
             </disciplina>
 
             <turma id="2">
+                <id>2</id>
                 <nome>P02</nome>
                 <sala>2</sala>
             </turma>
@@ -84,9 +89,11 @@
             </disciplina>
 
             <turma id="2">
+                <id>2</id>
                 <nome>P02</nome>
                 <sala>2</sala>
             </turma>
+
         </Alocacao>
 
         <Alocacao id="7">
@@ -98,6 +105,7 @@
             </disciplina>
 
             <turma id="2">
+                <id>2</id>
                 <nome>P02</nome>
                 <sala>2</sala>
             </turma>
@@ -112,6 +120,7 @@
             </disciplina>
 
             <turma id="2">
+                <id>2</id>
                 <nome>P02</nome>
                 <sala>2</sala>
             </turma>
@@ -128,6 +137,7 @@
             </disciplina>
 
             <turma id="3">
+                <id>3</id>
                 <nome>P03</nome>
                 <sala>3</sala>
             </turma>
@@ -142,6 +152,7 @@
             </disciplina>
 
             <turma id="3">
+                <id>3</id>
                 <nome>P03</nome>
                 <sala>3</sala>
             </turma>
@@ -156,6 +167,7 @@
             </disciplina>
 
             <turma id="3">
+                <id>3</id>
                 <nome>P03</nome>
                 <sala>3</sala>
             </turma>
@@ -170,6 +182,7 @@
             </disciplina>
 
             <turma id="3">
+                <id>3</id>
                 <nome>P03</nome>
                 <sala>3</sala>
             </turma>
@@ -186,6 +199,7 @@
             </disciplina>
 
             <turma id="4">
+                <id>4</id>
                 <nome>P04</nome>
                 <sala>4</sala>
             </turma>
@@ -200,6 +214,7 @@
             </disciplina>
 
             <turma id="4">
+                <id>4</id>
                 <nome>P04</nome>
                 <sala>4</sala>
             </turma>
@@ -214,6 +229,7 @@
             </disciplina>
 
             <turma id="4">
+                <id>4</id>
                 <nome>P04</nome>
                 <sala>4</sala>
             </turma>
@@ -228,6 +244,7 @@
             </disciplina>
 
             <turma id="4">
+                <id>4</id>
                 <nome>P04</nome>
                 <sala>4</sala>
             </turma>
@@ -244,6 +261,7 @@
             </disciplina>
 
             <turma id="5">
+                <id>5</id>
                 <nome>P05</nome>
                 <sala>5</sala>
             </turma>
@@ -258,6 +276,7 @@
             </disciplina>
 
             <turma id="5">
+                <id>5</id>
                 <nome>P05</nome>
                 <sala>5</sala>
             </turma>
@@ -272,6 +291,7 @@
             </disciplina>
 
             <turma id="5">
+                <id>5</id>
                 <nome>P05</nome>
                 <sala>5</sala>
             </turma>
@@ -286,6 +306,7 @@
             </disciplina>
 
             <turma id="5">
+                <id>5</id>
                 <nome>P05</nome>
                 <sala>5</sala>
             </turma>
@@ -301,6 +322,7 @@
             </disciplina>
 
             <turma id="9">
+                <id>9</id>
                 <nome>S09</nome>
                 <sala>9</sala>
             </turma>
@@ -315,6 +337,7 @@
             </disciplina>
 
             <turma id="9">
+                <id>9</id>
                 <nome>S09</nome>
                 <sala>9</sala>
             </turma>
@@ -329,6 +352,7 @@
             </disciplina>
 
             <turma id="9">
+                <id>9</id>
                 <nome>S09</nome>
                 <sala>9</sala>
             </turma>
@@ -343,6 +367,7 @@
             </disciplina>
 
             <turma id="9">
+                <id>9</id>
                 <nome>S09</nome>
                 <sala>9</sala>
             </turma>
@@ -361,6 +386,7 @@
             </disciplina>
 
             <turma id="6">
+                <id>6</id>
                 <nome>S06</nome>
                 <sala>6</sala>
             </turma>
@@ -375,6 +401,7 @@
             </disciplina>
 
             <turma id="6">
+                <id>6</id>
                 <nome>S06</nome>
                 <sala>6</sala>
             </turma>
@@ -389,6 +416,7 @@
             </disciplina>
 
             <turma id="6">
+                <id>6</id>
                 <nome>S06</nome>
                 <sala>6</sala>
             </turma>
@@ -403,6 +431,7 @@
             </disciplina>
 
             <turma id="6">
+                <id>6</id>
                 <nome>S06</nome>
                 <sala>6</sala>
             </turma>
@@ -419,6 +448,7 @@
             </disciplina>
 
             <turma id="7">
+                <id>7</id>
                 <nome>S07</nome>
                 <sala>7</sala>
             </turma>
@@ -433,6 +463,7 @@
             </disciplina>
 
             <turma id="7">
+                <id>7</id>
                 <nome>S07</nome>
                 <sala>7</sala>
             </turma>
@@ -447,6 +478,7 @@
             </disciplina>
 
             <turma id="7">
+                <id>7</id>
                 <nome>S07</nome>
                 <sala>7</sala>
             </turma>
@@ -461,6 +493,7 @@
             </disciplina>
 
             <turma id="7">
+                <id>7</id>
                 <nome>S07</nome>
                 <sala>7</sala>
             </turma>
@@ -477,6 +510,7 @@
             </disciplina>
 
             <turma id="8">
+                <id>8</id>
                 <nome>S08</nome>
                 <sala>8</sala>
             </turma>
@@ -491,6 +525,7 @@
             </disciplina>
 
             <turma id="8">
+                <id>8</id>
                 <nome>S08</nome>
                 <sala>8</sala>
             </turma>
@@ -505,6 +540,7 @@
             </disciplina>
 
             <turma id="8">
+                <id>8</id>
                 <nome>S08</nome>
                 <sala>8</sala>
             </turma>
@@ -519,6 +555,7 @@
             </disciplina>
 
             <turma id="8">
+                <id>8</id>
                 <nome>S08</nome>
                 <sala>8</sala>
             </turma>
@@ -535,6 +572,7 @@
             </disciplina>
 
             <turma id="10">
+                <id>10</id>
                 <nome>T10</nome>
                 <sala>10</sala>
             </turma>
@@ -549,6 +587,7 @@
             </disciplina>
 
             <turma id="10">
+                <id>10</id>
                 <nome>T10</nome>
                 <sala>10</sala>
             </turma>
@@ -563,6 +602,7 @@
             </disciplina>
 
             <turma id="10">
+                <id>10</id>
                 <nome>T10</nome>
                 <sala>10</sala>
             </turma>
@@ -577,6 +617,7 @@
             </disciplina>
 
             <turma id="10">
+                <id>10</id>
                 <nome>T10</nome>
                 <sala>10</sala>
             </turma>
@@ -593,6 +634,7 @@
             </disciplina>
 
             <turma id="11">
+                <id>11</id>
                 <nome>T11</nome>
                 <sala>11</sala>
             </turma>
@@ -607,6 +649,7 @@
             </disciplina>
 
             <turma id="11">
+                <id>11</id>
                 <nome>T11</nome>
                 <sala>11</sala>
             </turma>
@@ -621,6 +664,7 @@
             </disciplina>
 
             <turma id="11">
+                <id>11</id>
                 <nome>T11</nome>
                 <sala>11</sala>
             </turma>
@@ -635,6 +679,7 @@
             </disciplina>
 
             <turma id="11">
+                <id>11</id>
                 <nome>T11</nome>
                 <sala>11</sala>
             </turma>
@@ -648,6 +693,7 @@
 
         <!-- segunda -->
         <Horario id="1">
+            <id>1</id>
             <horainicio>7</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>7</horafim>
@@ -655,6 +701,7 @@
             <dia>seg</dia>
         </Horario>
         <Horario id="2">
+            <id>2</id>
             <horainicio>8</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>8</horafim>
@@ -662,6 +709,7 @@
             <dia>seg</dia>
         </Horario>
         <Horario id="3">
+            <id>3</id>
             <horainicio>9</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>9</horafim>
@@ -669,6 +717,7 @@
             <dia>seg</dia>
         </Horario>
         <Horario id="4">
+            <id>4</id>
             <horainicio>10</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>10</horafim>
@@ -676,6 +725,7 @@
             <dia>seg</dia>
         </Horario>
         <Horario id="5">
+            <id>5</id>
             <horainicio>11</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>11</horafim>
@@ -685,6 +735,7 @@
 
         <!-- terca -->
         <Horario id="6">
+            <id>6</id>
             <horainicio>7</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>7</horafim>
@@ -692,6 +743,7 @@
             <dia>ter</dia>
         </Horario>
         <Horario id="7">
+            <id>7</id>
             <horainicio>8</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>8</horafim>
@@ -699,6 +751,7 @@
             <dia>ter</dia>
         </Horario>
         <Horario id="8">
+            <id>8</id>
             <horainicio>9</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>9</horafim>
@@ -706,6 +759,7 @@
             <dia>ter</dia>
         </Horario>
         <Horario id="9">
+            <id>9</id>
             <horainicio>10</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>10</horafim>
@@ -713,6 +767,7 @@
             <dia>ter</dia>
         </Horario>
         <Horario id="10">
+            <id>10</id>
             <horainicio>11</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>11</horafim>
@@ -722,6 +777,7 @@
 
         <!-- quarta -->
         <Horario id="11">
+            <id>11</id>
             <horainicio>7</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>7</horafim>
@@ -729,6 +785,7 @@
             <dia>qua</dia>
         </Horario>
         <Horario id="12">
+            <id>12</id>
             <horainicio>8</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>8</horafim>
@@ -736,6 +793,7 @@
             <dia>qua</dia>
         </Horario>
         <Horario id="13">
+            <id>13</id>
             <horainicio>9</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>9</horafim>
@@ -743,6 +801,7 @@
             <dia>qua</dia>
         </Horario>
         <Horario id="14">
+            <id>14</id>
             <horainicio>10</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>10</horafim>
@@ -750,6 +809,7 @@
             <dia>qua</dia>
         </Horario>
         <Horario id="15">
+            <id>15</id>
             <horainicio>11</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>11</horafim>
@@ -759,6 +819,7 @@
 
         <!-- quinta -->
         <Horario id="16">
+            <id>16</id>
             <horainicio>7</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>7</horafim>
@@ -766,6 +827,7 @@
             <dia>qui</dia>
         </Horario>
         <Horario id="17">
+            <id>17</id>
             <horainicio>8</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>8</horafim>
@@ -773,6 +835,7 @@
             <dia>qui</dia>
         </Horario>
         <Horario id="18">
+            <id>18</id>
             <horainicio>9</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>9</horafim>
@@ -780,6 +843,7 @@
             <dia>qui</dia>
         </Horario>
         <Horario id="19">
+            <id>19</id>
             <horainicio>10</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>10</horafim>
@@ -787,6 +851,7 @@
             <dia>qui</dia>
         </Horario>
         <Horario id="20">
+            <id>20</id>
             <horainicio>11</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>11</horafim>
@@ -796,6 +861,7 @@
 
         <!-- sexta -->
         <Horario id="21">
+            <id>21</id>
             <horainicio>7</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>7</horafim>
@@ -803,6 +869,7 @@
             <dia>sex</dia>
         </Horario>
         <Horario id="22">
+            <id>22</id>
             <horainicio>8</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>8</horafim>
@@ -810,6 +877,7 @@
             <dia>sex</dia>
         </Horario>
         <Horario id="23">
+            <id>23</id>
             <horainicio>9</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>9</horafim>
@@ -817,6 +885,7 @@
             <dia>sex</dia>
         </Horario>
         <Horario id="24">
+            <id>24</id>
             <horainicio>10</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>10</horafim>
@@ -824,6 +893,7 @@
             <dia>sex</dia>
         </Horario>
         <Horario id="25">
+            <id>25</id>
             <horainicio>11</horainicio>
             <minutoinicio>00</minutoinicio>
             <horafim>11</horafim>

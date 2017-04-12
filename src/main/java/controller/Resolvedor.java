@@ -2,6 +2,10 @@ package controller;
 
 import dominio.Alocacao;
 import dominio.AlocacaoHorarioTurma;
+import jxl.Workbook;
+import jxl.WorkbookSettings;
+import jxl.write.*;
+import jxl.write.Number;
 import org.optaplanner.benchmark.api.PlannerBenchmark;
 import org.optaplanner.benchmark.api.PlannerBenchmarkFactory;
 import org.optaplanner.core.api.score.buildin.hardmediumsoft.HardMediumSoftScore;
@@ -10,7 +14,10 @@ import org.optaplanner.core.api.solver.SolverFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
+import java.util.Locale;
 import java.util.Observer;
 
 
@@ -42,6 +49,7 @@ public class Resolvedor extends java.util.Observable implements Runnable{
 
         AlocacaoHorarioTurma solucao = (AlocacaoHorarioTurma) solver.getBestSolution();
         logarSolucao(solucao);
+        gerarExcel(solucao);
         //printResultSolution(solucao);
 
         return solucao;
@@ -73,16 +81,69 @@ public class Resolvedor extends java.util.Observable implements Runnable{
         System.out.println("Melhor score: " + score);
         System.out.println("Solução é viável ? R = " + viabilidade);
         System.out.println();
-        solucao.getAlocacoes().forEach(a -> logger.info("Professor = [{}] -> Disciplina = [{}] -> Horário = [{}] -> Turma = [{}]",
+        solucao.getAlocacoes().forEach(a -> logger.info("Professor = [{}] -> Horário = [{}] -> Turma = [{}]",
                 a.getDisciplina().getProfessor().getNome(),
-                a.getDisciplina().getNome(),
-                //a.getHorario().getDia() + " " + a.getHorario().getHorainicio() + ":" + a.getHorario().getMinutoinicio() + " " +
-                //        a.getHorario().getHorafim() + ":" + a.getHorario().getMinutofim(),
                 a.getHorario().getId(),
                 a.getTurma().getId()));
     }
 
-    public static void printResultSolution(AlocacaoHorarioTurma solucao) {
+    public static void gerarExcel(AlocacaoHorarioTurma solucao){
+        try
+        {
+            List<Alocacao> alocacoes = solucao.getAlocacoes();
+
+
+            String filename = "GradeHorario.xls";
+            WorkbookSettings ws = new WorkbookSettings();
+            ws.setLocale(new Locale("pt", "PT"));
+            WritableWorkbook workbook = Workbook.createWorkbook(new File(filename), ws);
+            WritableSheet s = workbook.createSheet("Grade de Horários", 0);
+
+            //cria excel
+            //fonte
+            WritableFont wf = new WritableFont(WritableFont.ARIAL,10, WritableFont.BOLD);
+            WritableCellFormat cf = new WritableCellFormat(wf);
+            cf.setWrap(true);
+
+            //criando as linhas de horarios
+            int i = 0;
+            for (; i < 25; i++){
+                Number n = new Number(0, i+1, i+1);
+                s.addCell(n);
+            }
+
+            //criando as colunas de turmas
+            i = 0;
+            for (; i < 11; i++){
+                Number n = new Number(i+1, 0, i+1);
+                s.addCell(n);
+            }
+
+            for (Alocacao a : alocacoes) {
+
+                int horario = a.getHorario().getId();
+                int turma = a.getTurma().getId();
+                String professor = a.getDisciplina().getProfessor().getNome();
+
+                //TODO: verificacao se a celula esta vazia
+                Label l = new Label(turma, horario, professor);
+                s.addCell(l);
+            }
+
+            workbook.write();
+            workbook.close();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+        catch (WriteException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    /*public static void printResultSolution(AlocacaoHorarioTurma solucao) {
         List<Alocacao> resultadoAlocacoes = solucao.getAlocacoes();
 
         for(Alocacao resultadoAlocacao : resultadoAlocacoes) {
@@ -95,7 +156,7 @@ public class Resolvedor extends java.util.Observable implements Runnable{
                         "(" + resultadoAlocacao.getTurma().getNome() + ")");
             }
         }
-    }
+    }*/
 
     public int getScore() {
         return 123456;
