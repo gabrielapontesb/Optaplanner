@@ -52,7 +52,7 @@
             <!--<lateAcceptanceSize>50</lateAcceptanceSize>
         </acceptor>-->
         <forager>
-            <acceptedCountLimit>60</acceptedCountLimit>
+            <acceptedCountLimit>30</acceptedCountLimit>
         </forager>
     </localSearch>
 </solver>
